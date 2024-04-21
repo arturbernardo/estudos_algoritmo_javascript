@@ -9,8 +9,8 @@ function outer () {
 }
 
 const myNewFunction = outer();
-myNewFunction();
-let innerCounter = myNewFunction();
-console.log(innerCounter);
-innerCounter = 33;
-myNewFunction();
+myNewFunction(); // counter -> 1
+let innerCounter = myNewFunction(); // counter -> 2
+console.log(innerCounter); // innerCounter -> 2
+innerCounter = 33; // innerCounter -> 33
+myNewFunction(); // counter -> 3
